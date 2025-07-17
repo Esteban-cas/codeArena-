@@ -28,7 +28,7 @@ exports.register = async (req, res) => {
     await newUser.save()
     return res.status(201).json({
       message: 'Register exitoso',
-      redirect: '/pages/index.html' // o donde sea que quieras llevar al usuario
+      redirect: '/index.html' // o donde sea que quieras llevar al usuario
     })
   } catch (error) {
     console.error('Error registering user:', error)

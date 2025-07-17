@@ -11,7 +11,10 @@ const submissionRoutes = require('../services/submission/routes/submission.route
 const morgan = require('morgan')
 
 const cors = require('cors')
-app.use(cors()) // permitir peticiones desde Live Server
+app.use(cors({
+  origin: 'https://codearenaecv.netlify.app',
+  credentials: true
+}))
 
 // Middleware
 app.use(express.json())
