@@ -37,4 +37,9 @@ app.use('/api/admin', adminRoutes)
 app.use('/api/challenges', challengeRoutes)
 app.use('/api/submissions', submissionRoutes)
 
+app.get('/', (req, res) => {
+  res.send('Hello World!')
+  console.log('Hello World!')
+})
+
 module.exports = app
