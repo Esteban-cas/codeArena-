@@ -11,10 +11,7 @@ const submissionRoutes = require('../services/submission/routes/submission.route
 const morgan = require('morgan')
 
 const cors = require('cors')
-app.use(cors({
-  origin: 'https://codearenaecv.netlify.app',
-  credentials: true
-}))
+app.use(cors())
 
 // Middleware
 app.use(express.json())
